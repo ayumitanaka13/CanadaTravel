@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+#inspiration {
+    color: white;
+    background-color: black;
+    padding: 8rem 16rem;
+}
+
+#inspiration h2 {
+    margin-bottom: 4rem;
+}
+
+#inspiration .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#inspiration .content>div {
+    width: 30%;
+}
+
+#inspiration h3 {
+    margin: 2rem 0;
+}
+
+#inspiration p {
+    color: gray;
+}

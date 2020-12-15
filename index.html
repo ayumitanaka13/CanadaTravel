@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +11,16 @@
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
     <title>Document</title>
 </head>
-<body>
 
+<body>
+    <!-- popular destination -->
     <div class="container">
         <div class="destination_container">
             <div class="destination_head">
                 <p>Find out the most</p>
                 <h3>Popular Places</h3>
             </div>
-
+            
             <div class="swiper-container">
                 <div class="swiper-wrapper destination_cards">
                     <div class="swiper-slide destination_card">
@@ -68,15 +70,17 @@
                 <div class="swiper-button-next"></div>
             </div>
         </div>
+        <!-- /popular destination -->
 
+        <!-- all trips -->
         <div class="trip_container">
 
             <div class="trip_head">
                 <h3>All Trips</h3>
             </div>
 
+            <!-- all trips shown part -->
             <div class="trip_cards">
-
                 <div class="trip_card">
                     <div class="trip_img">
                         <img src="images/montreal.jpg" alt="">
@@ -138,16 +142,11 @@
                     </div>
                 </div>
 
+            </div>
+            <!--/all trips shown part-->
 
-                
-                
-                
-                
-            </div>  <!--cards 終わり-->
-
-            <!-- hide -->
+            <!-- all trips hidden part -->
             <div class="trip_hidden">
-
                 <div class="trip_card">
                     <div class="trip_img">
                         <img src="images/vancouver.jpg" alt="">
@@ -208,15 +207,16 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
-            <!-- hide -->
+            <!-- /all trips hidden part -->
 
             <div class="hide_btn" onclick="showLess()">Show less</div>
             <div class="show_btn" onclick="showMore()">Show more</div>
 
         </div>
+        <!-- /all trips -->
 
+        <!-- qurstion -->
         <div class="question_container">
             <div class="question_wrapper">
                 <div class="question_head">
@@ -225,15 +225,15 @@
                 <form method="#" class="question_form">
                     <input class="question_name" type="text" name="firstName" placeholder="Name">
                     <input class="question_email" type="text" name="email" placeholder="Email">
-                    <textarea class="question_message" name="message" id="" cols="30" rows="1" placeholder="Message"></textarea>
+                    <textarea class="question_message" name="message" id="" cols="30" rows="1"
+                        placeholder="Message"></textarea>
                 </form>
             </div>
         </div>
-
-        
     </div>
+    <!-- /question -->
 
-
+    <!-- footer -->
     <footer>
         <div class="footer_wrapper">
             <div class="footer_nav">
@@ -243,27 +243,27 @@
                     </div>
                     <div class="footer_eachList">
                         <h4>Company</h4>
-                            <ul>
-                                <li>About</li>
-                                <li>Contact Us</li>
-                            </ul>
+                        <ul>
+                            <li>About</li>
+                            <li>Contact Us</li>
+                        </ul>
                     </div>
                     <div class="footer_eachList">
                         <h4>Tours</h4>
-                            <ul>
-                                <li>All Tours</li>
-                                <li>Reccomended</li>
-                                <li>Hot Tours</li>
-                            </ul>
+                        <ul>
+                            <li>All Tours</li>
+                            <li>Reccomended</li>
+                            <li>Hot Tours</li>
+                        </ul>
                     </div>
                     <div class="footer_eachList">
                         <h4>Other</h4>
-                            <ul>
-                                <li>Blog</li>
-                                <li>Help Centre</li>
-                                <li>FAQ</li>
-                                <li>Privacy Policy</li>
-                            </ul>
+                        <ul>
+                            <li>Blog</li>
+                            <li>Help Centre</li>
+                            <li>FAQ</li>
+                            <li>Privacy Policy</li>
+                        </ul>
                         </li>
                     </div>
                     <div class="footer_eachList">
@@ -287,7 +287,7 @@
             </div>
         </div>
     </footer>
-
+    <!-- /footer -->
 
     </div>
 
@@ -304,6 +304,7 @@
         crossorigin="anonymous"></script> -->
     <!-- <script src="js/swiper.js"></script> -->
 
-    
+
 </body>
+
 </html>

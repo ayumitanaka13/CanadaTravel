@@ -6,10 +6,10 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
-    width: 95%;
 }
 
 .container {
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -221,12 +221,13 @@ width: 22%;
 .question_form {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-start;
 }
 .question_name,
 .question_email,
 .question_message {
-    margin-top: 2rem;
+    padding-top: 2rem;
+    margin: 0;
     border: none;
     border-bottom: #333 solid 1px;
 }
@@ -234,4 +235,43 @@ width: 22%;
 .question_name,
 .question_email {
     width: 150px;
+}
+
+
+/*-------------------------------
+------------Footer---------------
+-------------------------------*/
+.footer {
+    /* width: 100%; */
+}
+.footer_wrapper {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 2rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+ul, li {
+    list-style: none;
+    padding:10px 0 0 0;
+}
+.footer_allList {
+    display: flex;
+    flex-direction: row;
+}
+.sideList h4:nth-of-type(2) {
+    padding-top: 25px;
+}
+.sideList ul:nth-of-type(2) {
+    padding-top: 5px;
+}
+.socialIcon ion-icon {
+    font-size: 1rem;
+    padding: 8px;
+    border: #fff solid 1px;
+    border-radius: 50%;
 }

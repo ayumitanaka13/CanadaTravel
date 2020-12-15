@@ -9,6 +9,8 @@ img {
     display: block;
 }
 
+/* inspiration */
+
 #inspiration {
     color: white;
     background-color: black;
@@ -34,4 +36,14 @@ img {
 
 #inspiration p {
     color: gray;
+}
+
+/* choose */
+
+#choose {
+    padding: 8rem 16rem;
+}
+
+#choose h2 {
+    margin-bottom: 4rem;
 }

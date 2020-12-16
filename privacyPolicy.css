@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+    color: #333;
+    background-color: #EEE;
+}
+
+.privacyPolicy_container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: rgb(64, 197, 197);
+}
+
+.privacyPolicy_text {
+    margin-top: 3rem;
+}
+.privacyPolicy_container .back_btn {
+}
+
+.back_btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 20px 0;
+    border: #333 solid 1px;
+    transition: all 0.3s;
+}
+.back_btn:hover {
+    color: #fff !important;
+    background-color: #333;
+}
+.back_btn:link,
+.back_btn:visited,
+.back_btn:active {
+    color: #333;
+    text-decoration: none;
+}

@@ -69,3 +69,63 @@ img {
     margin-right: 0;
     background-color: black;
 }
+
+
+
+@media (max-width: 425px) {
+
+    /* inspiration */
+
+    #inspiration {
+        padding: 2rem 0;
+        text-align: center;
+    }
+    
+    #inspiration h2 {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    #inspiration .content {
+        display: block;
+    }
+    
+    #inspiration .content>div {
+        width: 100%;
+    }
+    
+    #inspiration h3 {
+        margin: 2rem 0;
+    }
+    
+    #inspiration p {
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    /* choose */
+    
+    #choose {
+        padding: 2rem 0;
+        text-align: center;
+    }
+    
+    #choose h2 {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    #choose .content {
+        display: block;
+    }
+    
+    #choose select, input {
+        width: 10rem;
+        height: 4rem;
+        padding: 1rem;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+        
+}
+  

@@ -12,6 +12,160 @@
 </head>
 
 <body>
+
+    <!-- YURI -->
+    <!-- -----header----- -->
+    <header>
+        <div class="nav-container">
+        <nav class="navbar">
+                <p>CATravel</p>
+                <!-- <img src="images/moose.png" class="logo" nalt="toplogo"> -->
+            <div class="navbox"> 
+                <ul class="nav-top">
+                    <li>
+                        <a href="#all-trip">All trip</a>
+                    </li>
+                    <li>
+                        <a href="#blog">Blog</a>
+                    </li>    
+                    <li>
+                        <a href="#contact">Contact us</a>
+                    </li>
+                    <li id="search">
+                        <!-- <a href="#search">Search</a> -->
+                        <input id="#search" type="text" name="header-search">
+                    </li>
+                </ul>
+                <h1>test</h1>
+            </div>
+        </nav>
+        </div>
+
+        <div class="hero">
+            
+        </div>
+    </header>
+
+    <!-- MOI -->
+    <!-- banner section -->
+    <section class="pictures-content">
+
+        <article class="pictures-banner">
+            <div class="picture-banner">
+                <img class="small-picture" src="/images/banner1.jpg" alt="ban1">
+                <h5 class="tour-price">$1250</h5>
+                <div class="tour-details">
+                    <h4>Star Gazing</h4>
+                    <p>Duration - 8 days</br>Date - 12 jan | 2021</br>Guide - Justin Trudeu</p>
+                </div>
+            </div>
+            <div class="picture-banner">
+                <img class="small-picture" src="/images/banner2.jpg" alt="ban1">
+                <h5 class="tour-price">$1250</h5>
+                <div class="tour-details">
+                    <h4>Star Gazing</h4>
+                    <p>Duration - 8 days</br>Date - 12 jan | 2021</br>Guide - Justin Trudeu</p>
+                </div>
+            </div>
+            <div class="picture-banner">
+                <img class="small-picture" src="/images/banner3.jpg" alt="ban1">
+                <h5 class="tour-price">$1250</h5>
+                <div class="tour-details">
+                    <h4>Star Gazing</h4>
+                    <p>Duration - 8 days</br>Date - 12 jan | 2021</br>Guide - Justin Trudeu</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="section-center">
+            <h2>each trip includes</h2>
+            <div class="trip-features" id="outer">
+                <div class="trip-feature">
+                    <i class="fas fa-campground faw-style"></i> 
+                    <h3 class="">The best route</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et vero natus voluptate excepturi autem consequatur</p>
+                </div>
+                <div class="trip-feature">
+                    <i class="fas fa-tree faw-style"></i>
+                    <h3 class="">The best route</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et vero natus voluptate excepturi autem consequatur</p>
+                </div>
+                <div class="trip-feature">
+                    <i class="fas fa-route faw-style"></i>
+                    <h3 class="">The best route</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et vero natus voluptate excepturi autem consequatur</p>
+                </div>
+                <div class="trip-feature">
+                    <i class="fas fa-mountain faw-style"></i>
+                    <h3 class="">The best route</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et vero natus voluptate excepturi autem consequatur</p>
+                </div>
+                <div class="trip-feature">
+                    <i class="fas fa-map-signs faw-style"></i>
+                    <h3 class="">The best route</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et vero natus voluptate excepturi autem consequatur</p>
+                </div>
+                <div class="trip-feature">
+                    <i class="fas fa-binoculars faw-style"></i>
+                    <h3 class="">The best route</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et vero natus voluptate excepturi autem consequatur</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- AYUMI -->
+    <!-- inspiration section -->
+    <section id="inspiration">
+        <h2>Find your inspiration</h2>
+        <div class="content">
+            <div>
+                <img src="image/banff.jpg" alt="">
+                <h3>Most beautiful lakes in Banff</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, distinctio.</p>
+            </div>
+            <div>
+                <img src="image/yellowknife.jpg" alt="">
+                <h3>Mysterious places in Yellowknife</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, distinctio.</p>
+            </div>
+            <div>
+                <img src="image/niagara.jpg" alt="">
+                <h3>Don't miss Niagara Falls</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, distinctio.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="choose">
+        <h2>Choose your trip</h2>
+        <div class="content">
+
+            <select class="fa" id="region">
+                <option class="fas fa-globe" value="">&#xf0ac; Region</option>
+                <option value="ab">Alberta</option>
+                <option value="bc">British Columbia</option>
+                <option value="on">Ontario</option>
+                <option value="qb">Quebec</option>
+            </select>
+            <select class="fa" id=class>
+                <option class="fas fa-suitcase" value="">&#xf0f2; Class</option>
+                <option value="first">First</option>
+                <option value="business">Business</option>
+                <option value="economy">Economy</option>
+            </select>
+            <input type="date" id="start" name="trip-start" value="2020-12-18" min="2020-12-01" max="2021-12-31">
+            <input type="date" id="end" name="trip-end" value="2020-12-19" min="2020-12-01" max="2021-12-31">
+            <select class="fas fa-user" id="person">
+                <option value="one">&#xf007; 1 Person</option>
+                <option value="two">2 Person</option>
+                <option value="three">3 Person</option>
+                <option value="four">4 Person</option>
+            </select>
+            <input type="submit" id="search" value="Search">
+        </div>
+    </section>
+        
+    <!-- KOJI -->
     <!-- popular destination -->
     <div class="container">
         <div class="destination_container">
@@ -293,8 +447,6 @@
     </footer>
     <!-- /footer -->
 
-    </div>
-
 
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -311,38 +463,6 @@
 
 
 
-<!-- -----header----- -->
-    <header>
-        <div class="nav-container">
-        <nav class="navbar">
-                <p>CATravel</p>
-                <!-- <img src="images/moose.png" class="logo" nalt="toplogo"> -->
-            <div class="navbox"> 
-                <ul class="nav-top">
-                    <li>
-                        <a href="#all-trip">All trip</a>
-                    </li>
-                    <li>
-                        <a href="#blog">Blog</a>
-                    </li>    
-                    <li>
-                        <a href="#contact">Contact us</a>
-                    </li>
-                    <li id="search">
-                        <!-- <a href="#search">Search</a> -->
-                        <input id="#search" type="text" name="header-search">
-                    </li>
-                
-                </ul>
-                <h1>test</h1>
-            </div>
-        </nav>
-        </div>
-        <div class="hero">
-            
-        </div>
-
-    </header>
 </body>
 
 </html>

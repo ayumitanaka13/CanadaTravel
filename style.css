@@ -14,7 +14,7 @@ img {
 #inspiration {
     color: white;
     background-color: black;
-    padding: 8rem 16rem;
+    padding: 8rem 14rem;
 }
 
 #inspiration h2 {
@@ -41,9 +41,31 @@ img {
 /* choose */
 
 #choose {
-    padding: 8rem 16rem;
+    padding: 8rem 14rem;
 }
 
 #choose h2 {
     margin-bottom: 4rem;
+}
+
+#choose .content {
+    display: flex;
+    justify-content: center;
+}
+
+#choose select, input {
+    width: 12rem;
+    height: 4rem;
+    padding: 1rem;
+    margin-right: 2rem;
+    border: 0px;
+    border-radius: 0.2rem;
+    box-shadow: 3px 3px 6px lightgray;
+    background-color: whitesmoke;
+}
+
+#search {
+    color: white;
+    margin-right: 0;
+    background-color: black;
 }

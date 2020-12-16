@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css">
     <title>Can Travel</title>
 </head>
 <body>
@@ -32,24 +33,29 @@
 
     <section id="choose">
         <h2>Choose your trip</h2>
-        <div>
+        <div class="content">
             <select id="region">
-                <option value="">Region</option>
+                <option value=""><i class="fas fa-globe"></i>Region</option>
+                <option value="ab">Alberta</option>
                 <option value="bc">British Columbia</option>
                 <option value="on">Ontario</option>
+                <option value="qb">Quebec</option>
             </select>
             <select id=class>
                 <option value="">Class</option>
                 <option value="first">First</option>
                 <option value="business">Business</option>
+                <option value="economy">Economy</option>
             </select>
             <input type="date" id="start" name="trip-start" value="2020-12-18" min="2020-12-01" max="2021-12-31">
-            <input type="date" id="end" name="trip-end" value="2020-12-18" min="2020-12-01" max="2021-12-31">
+            <input type="date" id="end" name="trip-end" value="2020-12-19" min="2020-12-01" max="2021-12-31">
             <select id="person">
                 <option value="one">1 Person</option>
                 <option value="two">2 Person</option>
                 <option value="three">3 Person</option>
+                <option value="four">4 Person</option>
             </select>
+            <input type="submit" id="search" value="Search">
         </div>
     </section>
     

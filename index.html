@@ -1,64 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/swiper.scss"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.1/swiper-bundle.min.js"> -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Can Travel</title>
 </head>
+
 <body>
+    <!-- popular destination -->
+    <div class="container">
+        <div class="destination_container">
+            <div class="destination_head">
+                <p>Find out the most</p>
+                <h3>Popular Places</h3>
+            </div>
 
-    <!-- inspiration section -->
-    <section id="inspiration">
-        <h2>Find your inspiration</h2>
-        <div class="content">
-            <div>
-                <img src="image/banff.jpg" alt="">
-                <h3>Most beautiful lakes in Banff</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, distinctio.</p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper destination_cards">
+                    <div class="swiper-slide destination_card">
+                        <img src="images/01.JPG" alt="">
+                        <div class="destination_card_text">
+                            <h3>Niagara Falls</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide destination_card">
+                        <img src="images/02.JPG" alt="">
+                        <div class="destination_card_text">
+                            <h3>Toronto</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide destination_card">
+                        <img src="images/03.JPG" alt="">
+                        <div class="destination_card_text">
+                            <h3>Winnipeg</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide destination_card">
+                        <img src="images/04.JPG" alt="">
+                        <div class="destination_card_text">
+                            <h3>Vancouver</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide destination_card">
+                        <img src="images/05.JPG" alt="">
+                        <div class="destination_card_text">
+                            <h3>Montreal</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide destination_card">
+                        <img src="images/06.JPG" alt="">
+                        <div class="destination_card_text">
+                            <h3>Whistler</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="image/yellowknife.jpg" alt="">
-                <h3>Mysterious places in Yellowknife</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, distinctio.</p>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <!-- /popular destination -->
+
+        <!-- all trips -->
+        <div class="trip_container">
+
+            <div class="trip_head">
+                <h3>All Trips</h3>
             </div>
-            <div>
-                <img src="image/niagara.jpg" alt="">
-                <h3>Don't miss Niagara Falls</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, distinctio.</p>
+
+            <!-- all trips shown part -->
+            <div class="trip_cards">
+                <div class="trip_card">
+                    <div class="trip_img">
+                        <img src="images/montreal.jpg" alt="">
+                    </div>
+                    <div class="trip_info">
+                        <div class="trip_title">
+                            <h4>Montreal</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis </p>
+                        <div class="trip_footer">
+                            <p>$ 2,700</p>
+                            <a href="#" class="book_btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trip_card">
+                    <div class="trip_img">
+                        <img src="images/niagrafalls.jpg" alt="">
+                    </div>
+                    <div class="trip_info">
+                        <div class="trip_title">
+                            <h4>Niagara Falls</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis </p>
+                        <div class="trip_footer">
+                            <p>$ 2,200</p>
+                            <a href="#" class="book_btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trip_card">
+                    <div class="trip_img">
+                        <img src="images/ottawa.jpg" alt="">
+                    </div>
+                    <div class="trip_info">
+                        <div class="trip_title">
+                            <h4>Ottawa</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis </p>
+                        <div class="trip_footer">
+                            <p>$ 1,900</p>
+                            <a href="#" class="book_btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trip_card">
+                    <div class="trip_img">
+                        <img src="images/toronto.jpg" alt="">
+                    </div>
+                    <div class="trip_info">
+                        <div class="trip_title">
+                            <h4>Toronto</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis </p>
+                        <div class="trip_footer">
+                            <p>$ 2,800</p>
+                            <a href="#" class="book_btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/all trips shown part-->
+
+            <!-- all trips hidden part -->
+            <div class="trip_hidden">
+                <div class="trip_card">
+                    <div class="trip_img">
+                        <img src="images/vancouver.jpg" alt="">
+                    </div>
+                    <div class="trip_info">
+                        <div class="trip_title">
+                            <h4>Vancouver</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis </p>
+                        <div class="trip_footer">
+                            <p>$ 3,000</p>
+                            <a href="#" class="book_btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trip_card">
+                    <div class="trip_img">
+                        <img src="images/whistler.jpg" alt="">
+                    </div>
+                    <div class="trip_info">
+                        <div class="trip_title">
+                            <h4>Montreal</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis </p>
+                        <div class="trip_footer">
+                            <p>$ 2,000</p>
+                            <a href="#" class="book_btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trip_card">
+                    <div class="trip_img">
+                        <img src="images/winnipeg.jpg" alt="">
+                    </div>
+                    <div class="trip_info">
+                        <div class="trip_title">
+                            <h4>Winnipeg</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis </p>
+                        <div class="trip_footer">
+                            <p>$ 1,400</p>
+                            <a href="#" class="book_btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trip_card">
+                    <div class="trip_img">
+                        <img src="images/yellowknife.jpg" alt="">
+                    </div>
+                    <div class="trip_info">
+                        <div class="trip_title">
+                            <h4>Yellowknife</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis </p>
+                        <div class="trip_footer">
+                            <p>$ 3,100</p>
+                            <a href="#" class="book_btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /all trips hidden part -->
+
+            <div class="hide_btn" onclick="showLess()">Show less</div>
+            <div class="show_btn" onclick="showMore()">Show more</div>
+
+        </div>
+        <!-- /all trips -->
+
+        <!-- qurstion -->
+        <div class="question_container">
+            <div class="question_wrapper">
+                <div class="question_head">
+                    <h2>Have any questions?</h2>
+                </div>
+                <form method="#" class="question_form">
+                    <input class="question_name" type="text" name="firstName" placeholder="Name">
+                    <input class="question_email" type="text" name="email" placeholder="Email">
+                    <textarea class="question_message" name="message" id="" cols="30" rows="1"
+                        placeholder="Message"></textarea>
+                    <a href="#" class="question_btn">Send</a>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- /question -->
 
-    <section id="choose">
-        <h2>Choose your trip</h2>
-        <div class="content">
-
-            <select class="fa" id="region">
-                <option class="fas fa-globe" value="">&#xf0ac; Region</option>
-                <option value="ab">Alberta</option>
-                <option value="bc">British Columbia</option>
-                <option value="on">Ontario</option>
-                <option value="qb">Quebec</option>
-            </select>
-            <select class="fa" id=class>
-                <option class="fas fa-suitcase" value="">&#xf0f2; Class</option>
-                <option value="first">First</option>
-                <option value="business">Business</option>
-                <option value="economy">Economy</option>
-            </select>
-            <input type="date" id="start" name="trip-start" value="2020-12-18" min="2020-12-01" max="2021-12-31">
-            <input type="date" id="end" name="trip-end" value="2020-12-19" min="2020-12-01" max="2021-12-31">
-            <select class="fas fa-user" id="person">
-                <option value="one">&#xf007; 1 Person</option>
-                <option value="two">2 Person</option>
-                <option value="three">3 Person</option>
-                <option value="four">4 Person</option>
-            </select>
-            <input type="submit" id="search" value="Search">
+    <!-- footer -->
+    <footer>
+        <div class="footer_wrapper">
+            <div class="footer_nav">
+                <ul class="footer_allList">
+                    <div class="footer_eachList">
+                        <h4>UsTravel</li>
+                    </div>
+                    <div class="footer_eachList">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>About</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="footer_eachList">
+                        <h4>Tours</h4>
+                        <ul>
+                            <li>All Tours</li>
+                            <li>Reccomended</li>
+                            <li>Hot Tours</li>
+                        </ul>
+                    </div>
+                    <div class="footer_eachList">
+                        <h4>Other</h4>
+                        <ul>
+                            <li>Blog</li>
+                            <li>Help Centre</li>
+                            <li>FAQ</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                        </li>
+                    </div>
+                    <div class="footer_eachList">
+                        <div class="sideList">
+                            <h4>NewsLetter</h4>
+                            <ul>
+                                <li><input type="text" name="email" placeholder="Email"></li>
+                            </ul>
+                            <h4>Get in touch</h4>
+                            <ul>
+                                <li class="socialIcon">
+                                    <!-- <ion-icon name="logo-instagram"></ion-icon> -->
+                                    <!-- <ion-icon name="logo-linkedin"></ion-icon> -->
+                                    <ion-icon class="facebook" name="logo-facebook"></ion-icon>
+                                    <ion-icon class="twitter" name="logo-twitter"></ion-icon>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer_copy">
+                <p>&copy; CanTravel 2020</p>
+                <p>All Right Reserved</p>
+            </div>
         </div>
-    </section>
-    
+    </footer>
+    <!-- /footer -->
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/985e1cc5aa.js" crossorigin="anonymous"></script>
+    <script src="slideshow.js"></script>
+    <script src="showhide.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.1/swiper-bundle.min.js"
+        integrity="sha512-MzZOTeyE0I70H6Pc2DcdhuPcGAeoGeT7yifrbR/cx92UTT7lG+OLXu70kPtJzqPrnmOjfmUHzklwT0GOqrYcZw=="
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="js/swiper.js"></script> -->
+
+
 </body>
+
 </html>

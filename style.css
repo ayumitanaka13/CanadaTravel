@@ -80,9 +80,13 @@ header
 
 /* MOI */
 
-/* <!-- PICTURES BANNER --> */
+/* banner section */
+
 .pictures-content{
     text-align: center;
+    position: relative;
+    top: -350px;
+    margin: 10%;
     }
 .pictures-banner{
     display: flex;
@@ -90,12 +94,14 @@ header
     margin: 0 auto;
     max-width: 1170px;
     flex-wrap: wrap;
+
     }
-@media (max-width: 950px){
+@media (max-width: 900px){
     .pictures-banner{
-        justify-content: center;
+        display: flex;
+        align-items: center;
         flex-direction: column;
-    }
+     }
 }
 
 .picture-banner{
@@ -104,11 +110,13 @@ header
 
 .small-picture{
     height: 350px;
+    width: auto;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
-@media (max-width: 576px){
+@media (max-width: 900px){
     .small-picture{
         box-shadow: none;
+        margin: 30px;
     }
 }
 .tour-price{
@@ -119,12 +127,24 @@ header
     background-color: white;
     padding: .25rem .25rem;
 }
+@media (max-width: 900px){
+    .tour-price{
+        position: relative;
+        text-align: right;
+    }
+}
 .tour-details{
     position: absolute;
     left: 5px;
     bottom: 10px;
     color: white;
     margin-bottom: 0;
+}
+@media (max-width: 900px){
+    .tour-details{
+    position: relative;
+    color: #000;
+    }
 }
 
 .section-center{

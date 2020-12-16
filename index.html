@@ -12,6 +12,91 @@
 </head>
 
 <body>
+    <!-- -----header----- -->
+    <header>
+        <div class="nav-container">
+        <nav class="navbar">
+                <p>CATravel</p>
+                <!-- <img src="images/moose.png" class="logo" nalt="toplogo"> -->
+            <div class="navbox"> 
+                <ul class="nav-top">
+                    <li>
+                        <a href="#all-trip">All trip</a>
+                    </li>
+                    <li>
+                        <a href="#blog">Blog</a>
+                    </li>    
+                    <li>
+                        <a href="#contact">Contact us</a>
+                    </li>
+                    <li id="search">
+                        <!-- <a href="#search">Search</a> -->
+                        <input id="#search" type="text" name="header-search">
+                    </li>
+                
+                </ul>
+                <h1>test</h1>
+            </div>
+        </nav>
+        </div>
+        <div class="hero">
+            
+        </div>
+
+    </header>
+
+    <!-- inspiration section -->
+    <section id="inspiration">
+        <h2>Find your inspiration</h2>
+        <div class="content">
+            <div>
+                <img src="image/banff.jpg" alt="">
+                <h3>Most beautiful lakes in Banff</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, distinctio.</p>
+            </div>
+            <div>
+                <img src="image/yellowknife.jpg" alt="">
+                <h3>Mysterious places in Yellowknife</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, distinctio.</p>
+            </div>
+            <div>
+                <img src="image/niagara.jpg" alt="">
+                <h3>Don't miss Niagara Falls</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, distinctio.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="choose">
+        <h2>Choose your trip</h2>
+        <div class="content">
+
+            <select class="fa" id="region">
+                <option class="fas fa-globe" value="">&#xf0ac; Region</option>
+                <option value="ab">Alberta</option>
+                <option value="bc">British Columbia</option>
+                <option value="on">Ontario</option>
+                <option value="qb">Quebec</option>
+            </select>
+            <select class="fa" id=class>
+                <option class="fas fa-suitcase" value="">&#xf0f2; Class</option>
+                <option value="first">First</option>
+                <option value="business">Business</option>
+                <option value="economy">Economy</option>
+            </select>
+            <input type="date" id="start" name="trip-start" value="2020-12-18" min="2020-12-01" max="2021-12-31">
+            <input type="date" id="end" name="trip-end" value="2020-12-19" min="2020-12-01" max="2021-12-31">
+            <select class="fas fa-user" id="person">
+                <option value="one">&#xf007; 1 Person</option>
+                <option value="two">2 Person</option>
+                <option value="three">3 Person</option>
+                <option value="four">4 Person</option>
+            </select>
+            <input type="submit" id="search" value="Search">
+        </div>
+    </section>
+        
+        
     <!-- popular destination -->
     <div class="container">
         <div class="destination_container">
@@ -297,6 +382,7 @@
 
 
 
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/985e1cc5aa.js" crossorigin="anonymous"></script>
@@ -311,38 +397,6 @@
 
 
 
-<!-- -----header----- -->
-    <header>
-        <div class="nav-container">
-        <nav class="navbar">
-                <p>CATravel</p>
-                <!-- <img src="images/moose.png" class="logo" nalt="toplogo"> -->
-            <div class="navbox"> 
-                <ul class="nav-top">
-                    <li>
-                        <a href="#all-trip">All trip</a>
-                    </li>
-                    <li>
-                        <a href="#blog">Blog</a>
-                    </li>    
-                    <li>
-                        <a href="#contact">Contact us</a>
-                    </li>
-                    <li id="search">
-                        <!-- <a href="#search">Search</a> -->
-                        <input id="#search" type="text" name="header-search">
-                    </li>
-                
-                </ul>
-                <h1>test</h1>
-            </div>
-        </nav>
-        </div>
-        <div class="hero">
-            
-        </div>
-
-    </header>
 </body>
 
 </html>

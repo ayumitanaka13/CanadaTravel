@@ -1,3 +1,69 @@
+/* ---------
+global
+--------- */
+
+ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    
+  }
+  
+  /* ---------
+  header
+  --------- */
+  .navbar {
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background:  rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* padding-left: 7rem; */
+    
+  }
+  
+    .navbar p {
+      margin:auto 7rem ;
+      font-weight:bold;
+      color: darkgray;
+    }
+  
+  .nav-container {
+    background-image: url(images/main-yellowknife.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .navbox {
+    padding: 0.45rem 7rem;
+    
+  }
+  .nav-top {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  .nav-top li {
+    padding: 0.25rem 1rem;
+  }
+  .nav-top a {
+    color: white;
+    
+  }
+  .logo {
+    width: 40px;
+    height:70px;
+    color: black;
+    margin-left: 7rem;
+  }
+  
+
 .right-arrow,
 .left-arrow {
     padding: 15px;
@@ -259,6 +325,80 @@ width: 22%;
 
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* inspiration */
+
+#inspiration {
+    color: white;
+    background-color: black;
+    padding: 8rem 14rem;
+}
+
+#inspiration h2 {
+    margin-bottom: 4rem;
+}
+
+#inspiration .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#inspiration .content>div {
+    width: 30%;
+}
+
+#inspiration h3 {
+    margin: 2rem 0;
+}
+
+#inspiration p {
+    color: gray;
+}
+
+/* choose */
+
+#choose {
+    padding: 8rem 14rem;
+}
+
+#choose h2 {
+    margin-bottom: 4rem;
+}
+
+#choose .content {
+    display: flex;
+    justify-content: center;
+}
+
+#choose select, input {
+    width: 12rem;
+    height: 4rem;
+    padding: 1rem;
+    margin-right: 2rem;
+    border: 0px;
+    border-radius: 0.2rem;
+    box-shadow: 3px 3px 6px lightgray;
+    background-color: whitesmoke;
+}
+
+#search {
+    color: white;
+    margin-right: 0;
+    background-color: black;
+}
+
+
+
 @media (max-width: 425px) {
 
     /* inspiration */
@@ -315,6 +455,8 @@ width: 22%;
     }
         
 }
+  
+
   
 
 /*-------------------------------
@@ -460,70 +602,6 @@ ul, li {
     display: flex;
     justify-content: space-between;
     margin: 0 !important;
-}
-/* ---------
-global
---------- */
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  
-}
-
-/* ---------
-header
---------- */
-.navbar {
-  width: 100%;
-  /* background-color: rgba(0, 0, 0, 0.7); */
-  background:  rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  /* padding-left: 7rem; */
-  
-}
-
-  .navbar p {
-    margin:auto 7rem ;
-    font-weight:bold;
-    color: darkgray;
-  }
-
-.nav-container {
-  background-image: url(images/main-yellowknife.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100vw;
-}
-
-.navbox {
-  padding: 0.45rem 7rem;
-  
-}
-.nav-top {
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-}
-
-.nav-top li {
-  padding: 0.25rem 1rem;
-}
-.nav-top a {
-  color: white;
-  
-}
-.logo {
-  width: 40px;
-  height:70px;
-  color: black;
-  margin-left: 7rem;
 }
 
 

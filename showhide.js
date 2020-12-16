@@ -4,7 +4,11 @@ let hideBtn = document.getElementsByClassName("hide_btn")[0];
 
 function showMore() {
     obj.style.display = "flex";
-    obj.style.transition = "all 0.8s";
+    // obj.style.animation = "show 1s linear 0s";
+    // obj.style.opacity = 1
+    // obj.style.visibility = "visible";
+
+    // obj.style.transition = "all 0.8s";
     showBtn.style.display = "none";
     // showBtn.style.transitionDuration = "0.8s";
     hideBtn.style.display = "block";
@@ -15,6 +19,9 @@ function showMore() {
 
 function showLess() {
     obj.style.display = "none";
+    // obj.style.opacity = 0;
+    // obj.style.visibility = "hidden";
+
     // obj.style.transitionDuration = "0.8s";
     showBtn.style.display = "block";
     // showBtn.style.transitionDuration = "0.8s";

@@ -16,9 +16,9 @@
 <body>
     <!-- popular destination -->
     <div class="container">
-        <div class="destination_container">
+        <div id="popular_places" class="destination_container">
             <div class="destination_head">
-                <p>Find out the most</p>
+                <!-- <p>Find out the most</p> -->
                 <h3>Popular Places</h3>
             </div>
 
@@ -27,42 +27,42 @@
                     <div class="swiper-slide destination_card">
                         <img src="images/01.JPG" alt="">
                         <div class="destination_card_text">
-                            <h3>Niagara Falls</h3>
+                            <h2>Niagara Falls</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis</p>
                         </div>
                     </div>
                     <div class="swiper-slide destination_card">
                         <img src="images/02.JPG" alt="">
                         <div class="destination_card_text">
-                            <h3>Toronto</h3>
+                            <h2>Toronto</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis</p>
                         </div>
                     </div>
                     <div class="swiper-slide destination_card">
                         <img src="images/03.JPG" alt="">
                         <div class="destination_card_text">
-                            <h3>Winnipeg</h3>
+                            <h2>Winnipeg</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis</p>
                         </div>
                     </div>
                     <div class="swiper-slide destination_card">
                         <img src="images/04.JPG" alt="">
                         <div class="destination_card_text">
-                            <h3>Vancouver</h3>
+                            <h2>Vancouver</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis</p>
                         </div>
                     </div>
                     <div class="swiper-slide destination_card">
                         <img src="images/05.JPG" alt="">
                         <div class="destination_card_text">
-                            <h3>Montreal</h3>
+                            <h2>Montreal</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis</p>
                         </div>
                     </div>
                     <div class="swiper-slide destination_card">
                         <img src="images/06.JPG" alt="">
                         <div class="destination_card_text">
-                            <h3>Whistler</h3>
+                            <h2>Whistler</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, reiciendis</p>
                         </div>
                     </div>
@@ -74,7 +74,7 @@
         <!-- /popular destination -->
 
         <!-- all trips -->
-        <div class="trip_container">
+        <div id="all_trips" class="trip_container">
 
             <div class="trip_head">
                 <h3>All Trips</h3>
@@ -241,7 +241,7 @@
             <div class="footer_nav">
                 <ul class="footer_allList">
                     <div class="footer_eachList">
-                        <h4>UsTravel</li>
+                        <h4>UsTravel</h4>
                     </div>
                     <div class="footer_eachList">
                         <h4>Company</h4>
@@ -253,9 +253,8 @@
                     <div class="footer_eachList">
                         <h4>Tours</h4>
                         <ul>
-                            <li>All Tours</li>
-                            <li>Reccomended</li>
-                            <li>Hot Tours</li>
+                            <li><a href="#popular_places">Popular Places</a></li>
+                            <li><a href="#all_trips">All Tours</a></li>
                         </ul>
                     </div>
                     <div class="footer_eachList">
@@ -270,19 +269,24 @@
                     </div>
                     <div class="footer_eachList">
                         <div class="sideList">
-                            <h4>NewsLetter</h4>
-                            <ul>
-                                <li><input type="text" name="email" placeholder="Email"></li>
-                            </ul>
-                            <h4>Get in touch</h4>
-                            <ul>
-                                <li class="socialIcon">
-                                    <!-- <ion-icon name="logo-instagram"></ion-icon> -->
-                                    <!-- <ion-icon name="logo-linkedin"></ion-icon> -->
-                                    <ion-icon class="facebook" name="logo-facebook"></ion-icon>
-                                    <ion-icon class="twitter" name="logo-twitter"></ion-icon>
-                                </li>
-                            </ul>
+                            <div class="side_eachList newsLetter">
+                                <h4>NewsLetter</h4>
+                                <ul>
+                                    <li><input type="text" name="email" placeholder="Email"></li>
+                                </ul>
+                            </div>
+                            <div class="side_eachList getInTouch">
+                                <h4>Get in touch</h4>
+                                <ul>
+                                    <li class="socialIcon">
+                                        <!-- <ion-icon name="logo-instagram"></ion-icon> -->
+                                        <!-- <ion-icon name="logo-linkedin"></ion-icon> -->
+                                        <a href="https://facebook.com"><ion-icon class="facebook" name="logo-facebook"></ion-icon></a>
+                                        <a href="https://twitter.com/"><ion-icon class="twitter" name="logo-twitter"></ion-icon></a>
+                                    </li>
+                                </ul>
+
+                            </div>
                         </div>
                     </div>
                 </ul>

@@ -91,6 +91,11 @@ body {
     top: -350px;
     margin: 10%;
     }
+@media (max-width: 900px){
+    .pictures-content{
+        top: 0;
+    }
+}
 .pictures-banner{
     display: flex;
     justify-content: space-between;
@@ -264,8 +269,9 @@ gap: 50px;
     /* background-image: none !important; */
     /* width: 28px !important;  */
 	/* height: 86px !important;  */
-	/* margin-top: -43px !important; */
-    top: 55% !important;
+    /* margin-top: -43px !important; */
+    
+    top: 100% !important;
 }
 .swiper-button-prev {
     left:5% !important;

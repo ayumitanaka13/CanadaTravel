@@ -89,7 +89,50 @@
     width: 100%;
     word-wrap: break-word;
 }
-.destination_card_text p {
+
+.swiper-button-next, .swiper-button-prev {
+    /* background-image: none !important; */
+    /* width: 28px !important;  */
+	/* height: 86px !important;  */
+	/* margin-top: -43px !important; */
+    top: 55% !important;
+}
+.swiper-button-prev {
+    left:5% !important;
+    /* right: auto; */
+}
+.swiper-button-next {
+    right: 5% !important;
+    /* right: auto; */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    transition: all 0.3s;
+}
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+    outline: none;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-family: fontAwesome !important;
+    font-size: 40px !important;
+    color: rgb(88, 88, 88) !important;
+    border: rgb(88, 88, 88) solid 3px;
+    padding: 4px;
+    border-radius: 50%;
+    -webkit-text-stroke: 2px white;
+}
+.swiper-button-prev::after {
+    content: "\f060" !important;
+}
+.swiper-button-next::after {
+    content: "\f061" !important;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    transform: scale(1.1);
 }
 
 /*-------------------------------

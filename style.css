@@ -29,34 +29,50 @@ img {
 header
 --------- */
 
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) ,rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.9)), url(images/main-yellowknife.jpg) ;
+  background-color:  rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
 .navbar {
-    width: 100%;
-    /* background-color: rgba(0, 0, 0, 0.7); */
-    background:  rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    /* padding-left: 7rem; */
+  width: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  /* background:  rgba(0, 0, 0, 0.5); */
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  /* padding-left: 7rem; */
+  margin:  0% 7%;
 }
-  
-.navbar p {
-      margin:auto 7rem ;
-      font-weight:bold;
-      color: darkgray;
-}
-  
+
+  .navbar p {
+    margin:auto 1rem ;
+    font-weight:bold;
+    color:silver;
+  }
+
 .nav-container {
-    background-image: url(images/main-yellowknife.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
+  width: 100%;
 }
+
+.navbox {
+  padding: 0.45rem 1rem ;
   
 .navbox {
     padding: 0.45rem 7rem;
     
 }
+
+/* @media (max-width: 425px){
+  remove navbox for width 0px to 425px (mobile view)
+  .navbox {
+    display: none;
+  }
+} */
 .nav-top {
     display: flex;
     text-align: center;
@@ -67,7 +83,21 @@ header
     padding: 0.25rem 1rem;
 }
 .nav-top a {
-    color: white;
+  color: white;
+}
+
+#search label {
+  color:white;
+  margin-right : 5px;
+}
+
+#search i {
+  color: darkgrey;
+}
+
+#search {
+  border-radius: 20px;
+  opacity: 0.8;
 }
 .logo {
     width: 40px;
@@ -700,4 +730,112 @@ ul, li {
     justify-content: space-between;
     margin: 0 !important;
 }
+/* -------------
+hero
+------------- */
+.hero {
+  color: white;
+  margin: 7%;
+  
+  display: flex; 
+  flex-direction: column;
+  /* justify-content: center; */
+  /* flex :1 1; */
+}
 
+.css-slider {
+  align-self: flex-end;
+}
+.hero-top {
+  margin: 2rem 2rem;
+  /* margin-right: ; */
+}
+.hero h1 {
+  font-size: 40px;
+}
+
+.btn {
+  text-transform: uppercase;
+  /* background: var(--clr-primary-5); */
+  color: white;
+  padding: 0.375rem 1rem;
+  letter-spacing:  0.25rem;
+  display: inline-block;
+  /* font-weight: 700; */
+  transition: all 0.3s linear;;
+  font-size: 0.875rem;
+  border: 2px solid white;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  color:gold;
+  background:  rgba(0, 0, 0, 0.5);
+  /* border: none; */
+}
+/* *********
+slider 
+********* */
+
+/* .slide-wrapp {
+  display: flex;
+  width:100% ;
+} */
+
+.slide-wrap {
+  /* background-color: #ccc; */
+  display: flex;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  overflow-x: scroll;
+  /* align-self: ; */
+
+}
+.slide-box {
+  height: auto;
+  /* margin: .5%; */
+  /* width: %; */
+  width: 350px;
+  height: 250px;
+}
+/* .slide-box a {
+  background-color: #fff;
+  color: #222;
+  display: block;
+  text-decoration: none;
+} */
+.slide-box img {
+  display: block;
+  width: 350px;
+  height: 250px;
+}
+
+/* .slide-box .image2 {
+
+} */
+/* .slide-box p {
+  font-weight: bold;
+  padding: 10px;
+  margin:.5rem auto;
+} */
+@media screen and (max-width: 768px) {
+/* スマホサイズでスライダー表示 */
+  .slide-wrap {
+    overflow-x: scroll;
+  }
+  .slide-box {
+    flex: 0 0 50%;
+    margin: auto 1% auto auto;
+    max-width: px;
+  }
+
+  .nav-top {
+    display: block;
+  }
+}
+
+.hero-bottom {
+  background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  text-align: center;
+}

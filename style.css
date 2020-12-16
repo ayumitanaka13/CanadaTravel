@@ -254,10 +254,12 @@ width: 22%;
     /* outline: #333 solid 1px; */
     outline: none;
 }
-
 .question_name,
 .question_email {
     width: 150px;
+}
+.question_message::placeholder {
+    
 }
 
 .question_form a{

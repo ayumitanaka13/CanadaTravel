@@ -156,7 +156,7 @@ width: 22%;
     /* margin: 0; */
     /* padding: 0; */
 }
-.trip_footer a{
+.trip_footer a {
     /* display: block; */
     text-align: center;
     padding: 5px 7px;
@@ -258,6 +258,29 @@ width: 22%;
 .question_name,
 .question_email {
     width: 150px;
+}
+
+.question_form a{
+    /* display: block; */
+    text-align: center;
+    padding: 8px 50px;
+    margin-top: 2rem;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border: #000 solid 1px;
+    transition: all 0.4s;
+}
+.question_form a:hover{
+    /* display: block; */
+    /* text-align: center; */
+    /* padding: 5px 7px; */
+    /* margin-top: 1rem; */
+    background-color: #000;
+    color: #fff;
+    /* text-decoration: none; */
+    /* border: #000 solid 2px; */
+    /* transition: all 0.4s; */
 }
 
 

@@ -147,6 +147,7 @@ body {
     bottom: 10px;
     color: white;
     margin-bottom: 0;
+    text-align: left;
 }
 @media (max-width: 900px){
     .tour-details{
@@ -161,6 +162,7 @@ body {
     margin: 0 auto;
     max-width: 1170px;
     flex-wrap: wrap;
+    cursor: pointer;
     }
 
 .section-center h2{
@@ -272,6 +274,12 @@ gap: 50px;
     /* margin-top: -43px !important; */
     
     top: 100% !important;
+}
+@media (max-width: 900px){
+    .swiper-button-next, .swiper-button-prev {
+    display: none;
+    top: 0%;
+    }
 }
 .swiper-button-prev {
     left:5% !important;

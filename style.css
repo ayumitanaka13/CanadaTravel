@@ -199,6 +199,7 @@ gap: 50px;
 
 #inspiration .content>div {
     width: 30%;
+    overflow: hidden;
 }
 
 #inspiration h3 {
@@ -207,6 +208,15 @@ gap: 50px;
 
 #inspiration p {
     color: gray;
+}
+
+#inspiration img {
+    transition: all 1s;
+}
+
+#inspiration img:hover {
+    transform:scale(1.1);
+    transition-duration: 1s;
 }
 
 /* choose */
@@ -235,11 +245,16 @@ gap: 50px;
     background-color: whitesmoke;
 }
 
-#search {
+.search {
     color: white;
     margin-right: 0;
     background-color: black;
 }
+
+.search:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 
 
 
@@ -265,6 +280,7 @@ gap: 50px;
         width: 100%;
     }
     
+
     #inspiration h3 {
         margin: 2rem 0;
     }
@@ -699,5 +715,9 @@ ul, li {
     display: flex;
     justify-content: space-between;
     margin: 0 !important;
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> feature_check

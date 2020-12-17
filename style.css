@@ -1,5 +1,4 @@
 /* global */
-
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +22,6 @@ img {
 
 /* YURI */
 /* header */
-
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1) ,rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.9)), url(images/main-yellowknife.jpg) ;
     background-color:  rgba(0, 0, 0, 0.5);
@@ -34,21 +32,17 @@ header {
 }
 
 /* toggle */
-
 .navbar {
     position: fixed;
-    /* top: 0;
-    left: 0; */
     width: 100%;
     background: transparent;
     z-index: 2;
 }
 .home-logo {
-    /* margin:1.5rem 1rem ; */
     font-weight:bold;
     color:silver;
     font-size: 18px;
-  }
+}
 .active{
     background: rgb(27, 27, 70);
 }
@@ -79,8 +73,6 @@ header {
 }
 .nav-toggle:hover {
     transform: scale(1.2);
-    /* background-color: #102A42;
-    color: gray; */
 }
 .nav-link {
     display: block;
@@ -90,15 +82,12 @@ header {
     transition: all 0.3s linear;
     cursor: pointer;
     font-size: 1rem;
-    /* background-color: #777; */
 }
 .nav-links {
     height: 0;
     overflow: hidden;
     transition: all 0.3s linear;
 }
-/* .nav-link a {
-} */
 .nav-link:hover {
     background-color: gray;
 }
@@ -113,7 +102,6 @@ header {
     /* hide toggle button */
     .navbar {
         padding: 0rem 2rem;
-        /* height: 200px; */
         position:absolute;
     }
     .nav-toggle {
@@ -166,19 +154,14 @@ header {
         color: #88EBF2;
     }
 }
-/* -------------
-hero
-------------- */
+/* hero */
 .hero {
   color: white;
-  /* margin:  7% 7% 5%; */
   padding: 12% 7% 5%;
   
   
   display: flex; 
-  flex-direction: column;
-  /* justify-content: center; */
-  /* flex :1 1; */
+  flex-direction: column;/
 }
 
 #css-slider {
@@ -186,7 +169,6 @@ hero
 }
 .hero-top {
   margin: 2rem 2rem;
-  /* margin-right: ; */
 }
 .hero h1 {
   font-size: 40px;
@@ -200,12 +182,10 @@ hero
 
 .btn {
   text-transform: uppercase;
-  /* background: var(--clr-primary-5); */
   color: white;
   padding: 0.375rem 1rem;
   letter-spacing:  0.25rem;
   display: inline-block;
-  /* font-weight: 700; */
   transition: all 0.3s linear;
   font-size: 1rem;
   border: 2px solid white;
@@ -216,7 +196,6 @@ hero
   color:rgb(55, 146, 46);
   background:  rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.5) ;
-  /* border: none; */
 }
 
 @media screen and (max-width: 425px) {
@@ -226,27 +205,15 @@ hero
       }
 }
 
-/* *********
-slider 
-********* */
-
-/* .slide-wrapp {
-  display: flex;
-  width:100% ;
-} */
-
+/* silder */
 .slide-wrap {
-  /* background-color: #ccc; */
   display: flex;
   margin: 0 auto;
   max-width: 560px;
   width: 100%;
   overflow-x: scroll;
-  /* overflow: hidden; */
-  /* align-self: ; */
   justify-content: end;
   margin-bottom: 2rem;
-
 }
 
 .slide-wrap::-webkit-scrollbar {
@@ -267,35 +234,19 @@ slider
 
 .slide-box {
   height: auto;
-  /* margin: .5%; */
-  /* width: %; */
   width: 350px;
   height: 250px;
   margin-top: 0.5rem;
 }
-/* .slide-box a {
-  background-color: #fff;
-  color: #222;
-  display: block;
-  text-decoration: none;
-} */
 .slide-box img {
   display: block;
   width: 350px;
   height:250px;
   transition: all 0.3s linear;
-  /* margin-right: 10px; */
 }
 .slide-box img:hover {
     transform: scale(1.1);
 }
-
-/* .slide-box p {
-  font-weight: bold;
-  padding: 10px;
-  margin:.5rem auto;
-} */
-
 .hero-bottom {
     text-align: center;
     margin:1.25rem 8rem;
@@ -313,16 +264,13 @@ slider
   background-color:rgba(0, 0, 0, 1) ;
 }
 @media screen and (max-width: 768px) {
-/* スマホサイズでスライダー表示 */
   .slide-wrap {
     overflow-x: scroll;
     max-width: 400px;
   }
 
- 
   .slide-box {
     flex: 0 0 50%;
-    /* margin: auto 1% auto auto; */
     max-width: 300px;
   }
 
@@ -341,50 +289,56 @@ slider
     padding-top:1rem ;
   }
 }
+
 /* MOI */
-
 /* banner section */
-
 .pictures-content{
-    text-align: center;
-    position: relative;
-    top: -350px;
-    margin: 10%;
-    }
-@media (max-width: 900px){
-    .pictures-content{
-        top: 0;
-    }
+    margin: 10% auto;
 }
 .pictures-banner{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     margin: 0 auto;
-    max-width: 1170px;
-    flex-wrap: wrap;
-
-    }
-@media (max-width: 900px){
-    .pictures-banner{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-     }
+    justify-items: center;
 }
 
 .picture-banner{
-    position: relative;
+    margin: 20px 0;
 }
 
 .small-picture{
+    position: relative;
     height: 350px;
-    width: auto;
+    width: 300px;
+    
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
-@media (max-width: 900px){
+.small-picture img{
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 425px){
+    .pictures-content{
+        top: 0;
+    }
     .small-picture{
         box-shadow: none;
         margin: 30px;
+    }
+}
+@media (min-width: 768px){
+    .pictures-banner{
+        grid-template-columns: 1fr 1fr;
+    }
+    .small-picture{
+        width: 200px;
+    }
+}
+@media (min-width:1023px){
+    .pictures-banner{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .small-picture{
+        width: 200px;
     }
 }
 .tour-price{
@@ -395,12 +349,7 @@ slider
     background-color: white;
     padding: .25rem .25rem;
 }
-@media (max-width: 900px){
-    .tour-price{
-        position: relative;
-        text-align: right;
-    }
-}
+
 .tour-details{
     position: absolute;
     left: 5px;
@@ -408,12 +357,6 @@ slider
     color: white;
     margin-bottom: 0;
     text-align: left;
-}
-@media (max-width: 900px){
-    .tour-details{
-    position: relative;
-    color: #000;
-    }
 }
 
 .section-center{
@@ -430,9 +373,9 @@ slider
     margin: 5rem;
 }
 #outer{
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
 }
 .trip-features > div{
     display: flex;
@@ -448,10 +391,8 @@ gap: 50px;
 }
 
 
-
 /* AYUMI */
 /* inspiration */
-
 #inspiration {
     color: white;
     background-color: black;
@@ -490,7 +431,6 @@ gap: 50px;
 }
 
 /* choose */
-
 #choose {
     padding: 8rem 14rem;
 }
@@ -524,9 +464,6 @@ gap: 50px;
 .search:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
-
-
-
 
 @media (max-width: 425px) {
 
@@ -593,109 +530,6 @@ gap: 50px;
     width: 80%;
     margin: 0 auto;
 }
-/* banner section */
-
-.pictures-content{
-    margin: 10% auto;
-    }
-@media (max-width: 425px){
-    .pictures-content{
-        top: 0;
-    }
-}
-.pictures-banner{
-    display: grid;
-    margin: 0 auto;
-    justify-items: center;
-}
-
-.picture-banner{
-    
-    margin: 20px 0;
-}
-
-.small-picture{
-    position: relative;
-    height: 350px;
-    width: 300px;
-    
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
-}
-.small-picture img{
-    height: 100%;
-    object-fit: cover;
-}
-@media (max-width: 425px){
-    .small-picture{
-        box-shadow: none;
-        margin: 30px;
-    }
-}
-@media (min-width: 768px){
-    .pictures-banner{
-        grid-template-columns: 1fr 1fr;
-    }
-    .small-picture{
-        width: 200px;
-    }
-}
-@media (min-width:1023px){
-    .pictures-banner{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .small-picture{
-        width: 200px;
-    }
-}
-.tour-price{
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: black;
-    background-color: white;
-    padding: .25rem .25rem;
-}
-
-.tour-details{
-    position: absolute;
-    left: 5px;
-    bottom: 10px;
-    color: white;
-    margin-bottom: 0;
-    text-align: left;
-}
-
-
-.section-center{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin: 0 auto;
-    max-width: 1170px;
-    flex-wrap: wrap;
-    cursor: pointer;
-    }
-
-.section-center h2{
-    text-align: center;
-    margin: 5rem;
-}
-#outer{
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-gap: 50px;
-}
-.trip-features > div{
-    display: flex;
-    flex-direction: column;
-  
-}
-.trip-feature{
-    text-align: center; 
-}
-.faw-style{
-    font-size: 40px;
-    margin: 50px;
-}
 
 /*-------------------------------
 ---------Popular Places----------
@@ -757,10 +591,11 @@ gap: 50px;
     line-height: 1.5;
 }
 
-.swiper-button-next, .swiper-button-prev {    
-    top: 56% !important;
+/* Styles of arrows on slider */
+.swiper-button-next,
+.swiper-button-prev {
+    top: 58% !important;
 }
-
 .swiper-button-prev {
     left:-6% !important;
 }
@@ -1059,10 +894,7 @@ footer a:active {
     display: flex;
     justify-content: space-between;
     margin: 0 !important;
-
 }
-
-
 
 @media (max-width: 425px) {
     .footer_wrapper {

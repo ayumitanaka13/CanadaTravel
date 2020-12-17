@@ -395,12 +395,13 @@ gap: 50px;
     word-wrap: break-word;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
     /* background-image: none !important; */
     /* width: 28px !important;  */
 	/* height: 86px !important;  */
 	/* margin-top: -43px !important; */
-    /* top: 50% !important; */
+    top: 58% !important;
 }
 .swiper-button-prev {
     left:-6% !important;
@@ -471,9 +472,14 @@ gap: 50px;
 }
 
 .trip_card {
-background-color: rgb(235, 235, 235);
-margin: 10px 10px;
-width: 22%;
+    background-color: rgb(235, 235, 235);
+    margin: 10px 10px;
+    width: 22%;
+    transition: all 0.4s;
+}
+.trip_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);;
 }
 
 .trip_img {
@@ -548,6 +554,7 @@ width: 22%;
     /* width: 100%; */
     box-sizing: unset;
     cursor: pointer;
+    margin-top: 20px;
 
     
 }
@@ -602,7 +609,7 @@ width: 22%;
 .question_message {
     /* padding-top: 2rem; */
     /* height: 2rem; */
-    height: 1rem;
+    height: 100%;
     /* size: 2rem; */
     padding: 3px 5px;
     margin: 1rem 4rem 0 0;
@@ -622,7 +629,7 @@ width: 22%;
 }
 .question_name,
 .question_email {
-    width: 150px;
+    width: 180px;
 }
 .question_name::placeholder
 .question_email::placeholder {
@@ -703,6 +710,8 @@ ul, li {
     color: #fff;
     background-color: #000;
     border: #fff solid 1px;
+    height: 100%;
+    box-shadow: none;
 }
 .sideList input:focus {
     outline: none;

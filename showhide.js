@@ -23,3 +23,15 @@ function showLess() {
     // $('div').addClass('trip_hidden');
 
 }
+
+(function() {
+    ('.hamburger').click(function() {
+        (this).toggleClass('active');
+ 
+        if ((this).hasClass('active')) {
+            ('.navbox').addClass('active');
+        } else {
+            ('.navbox').removeClass('active');
+        }
+    });
+});

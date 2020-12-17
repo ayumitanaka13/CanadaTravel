@@ -30,13 +30,14 @@ header
 --------- */
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1) ,rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.9)), url(images/main-yellowknife.jpg) ;
-  background-color:  rgba(0, 0, 0, 0.5);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) ,rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.9)), url(images/main-yellowknife.jpg) ;
+    background-color:  rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
 }
+/* @media (min-width:768px) { */
 
 .navbar {
   width: 90%;
@@ -48,74 +49,75 @@ header {
   /* padding-left: 7rem; */
   margin:  auto 7%;
 }
-
-  .navbar p {
+.home-logo {
     margin:1.5rem 1rem ;
     font-weight:bold;
     color:silver;
     font-size: 18px;
-  }
+}
 
-  .nav-container {
+.nav-container {
     width: 100%;
 }
 
 .navbox {
-  padding: 0.45rem 1rem ;
-  margin-right: 7%;
-  
+    padding: 0.45rem 1rem ;
+    margin-right: 7%;
+    display: inline;
 }
 
+
 /* @media (max-width: 425px){
-  remove navbox for width 0px to 425px (mobile view)
-  .navbox {
-    display: none;
-  }
+    remove navbox for width 0px to 425px (mobile view)
+    .navbox {
+        display: none;
+    }
 } */
 .nav-top {
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
 }
 
 .nav-link:hover {
-  background-color: rgb(235, 235, 235, 0.3) ;
-  color: rgb(34, 32, 32);
-  border-radius: 10px;
-  transition: all 0.3s linear;
+    background-color: rgb(235, 235, 235, 0.5) ;
+    color: rgb(34, 32, 32);
+    border-radius: 10px;
+    transition: all 0.3s linear;
 }
 .nav-link a:hover {
     color:black;
     transition: all 0.2s linear;
 }
 .nav-top li {
-  padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
 }
 .nav-top a {
-  color: white;
+    color: white;
 }
 
-#search label {
-  color:white;
-  margin-right : 5px;
-}
+/* #choose label {
+    color:white;
+    margin-right : 5px;
+} */
 
 /* #search i {
-  color: darkgrey;
+    color: darkgrey;
 }
 
 #search {
-  border-radius: 20px;
-  opacity: 0.8;
+    border-radius: 20px;
+    opacity: 0.8;
 } */
 /* .logo {
-  width: 40px;
-  height:70px;
-  color: black;
-  margin-left: 7rem;
+    width: 40px;
+    height:70px;
+    color: black;
+    margin-left: 7rem;
 } */
 
 
+/* } */
 /* -------------
 hero
 ------------- */
@@ -138,11 +140,11 @@ hero
 }
 .hero h1 {
   font-size: 40px;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.35rem;
 }
 
 .hero p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.35rem;
 }
 
 
@@ -187,7 +189,7 @@ slider
   /* background-color: #ccc; */
   display: flex;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 560px;
   width: 100%;
   overflow-x: scroll;
   /* overflow: hidden; */
@@ -219,6 +221,7 @@ slider
   /* width: %; */
   width: 350px;
   height: 250px;
+  margin-top: 0.5rem;
 }
 /* .slide-box a {
   background-color: #fff;
@@ -229,7 +232,12 @@ slider
 .slide-box img {
   display: block;
   width: 350px;
-  height: 250px;
+  height:250px;
+  transition: all 0.3s linear;
+  /* margin-right: 10px; */
+}
+.slide-box img:hover {
+    transform: scale(1.1);
 }
 
 /* .slide-box p {
@@ -258,15 +266,14 @@ slider
 /* スマホサイズでスライダー表示 */
   .slide-wrap {
     overflow-x: scroll;
+    max-width: 400px;
   }
 
-  /* .slide-wrap::-webkit-scrollbar {
-    display: none;
-  } */
+ 
   .slide-box {
     flex: 0 0 50%;
     /* margin: auto 1% auto auto; */
-    max-width: 350px;
+    max-width: 300px;
   }
 
   .nav-top {
@@ -274,8 +281,8 @@ slider
   }
   .slide-box img {
     display: block;
-    width: 350px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
   }
 
   .hero-bottom {
@@ -294,6 +301,11 @@ slider
     top: -350px;
     margin: 10%;
     }
+@media (max-width: 900px){
+    .pictures-content{
+        top: 0;
+    }
+}
 .pictures-banner{
     display: flex;
     justify-content: space-between;
@@ -345,6 +357,7 @@ slider
     bottom: 10px;
     color: white;
     margin-bottom: 0;
+    text-align: left;
 }
 @media (max-width: 900px){
     .tour-details{
@@ -359,6 +372,7 @@ slider
     margin: 0 auto;
     max-width: 1170px;
     flex-wrap: wrap;
+    cursor: pointer;
     }
 
 .section-center h2{

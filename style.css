@@ -549,7 +549,7 @@ gap: 50px;
 .hide_btn {
     background-color: #fff;
     color: #000;
-    border: #000 solid 2px;
+    border: #000 solid 1px;
     transition: all 0.4s;
     /* display: inline-block; */
     width: 100px;
@@ -575,7 +575,7 @@ gap: 50px;
     }
     .trip_cards,
     .trip_hidden {
-    justify-content: center;
+    justify-content: space-around;
     }
 }
 @media (max-width: 425px) {
@@ -668,6 +668,9 @@ gap: 50px;
     .question_wrapper {
         flex-direction: column;
     }
+    .question_btn {
+        margin: 0 auto;
+    }
 }
 @media (max-width: 980px) {
     .question_wrapper {
@@ -723,7 +726,7 @@ ul, li {
 .sideList h4 {
     margin-bottom: 0;
 }
-.sideList h4:nth-of-type(2) {
+.sideList .getInTouch {
     padding-top: 25px;
 }
 .sideList ul:nth-of-type(2) {
@@ -741,6 +744,13 @@ footer a:visited,
 footer a:active {
     color: rgb(150, 150, 150);
     text-decoration: none;
+}
+.footer_eachList a,
+.footer_eachList h4 a:link,
+.footer_eachList h4 a:hover,
+.footer_eachList h4 a:active,
+.footer_eachList h4 a:visited {
+    color: #fff;
 }
 .footer_eachList a{
     transition: all 0.3s;
@@ -771,15 +781,26 @@ footer a:active {
         display: inline-block;
         width: 100%;
     } */
-    .footer_eachList li {
-        display: none;
-    }
     .footer_allList {
         flex-direction: column;
     }
-    .sideList .getInTouch {
-        padding-top: 0px;
+    .footer_eachList,
+    .getInTouch {
+        padding-top: 20px !important;
     }
+    .footer_eachList ul {
+        display: none;
+        padding: 0;
+    }
+    .footer_eachList:nth-of-type(5) ul {
+        display: inline-block;
+    }
+    .footer_eachList:nth-of-type(5) ul li {
+        /* padding: 0; */
+    }
+    /* .sideList .getInTouch {
+        padding-top: 0px;
+    } */
 }
 @media (max-width: 980px) {
     /* .sideList {
@@ -795,9 +816,13 @@ footer a:active {
     .footer_eachList {
         width: 50%;
         margin: 0 auto;
+        margin-bottom: 20px;
     }
     .footer_eachList ul {
         text-align: center;
+    }
+    .newsletter input {
+        margin: 0;
     }
     h4 {
         text-align: center;

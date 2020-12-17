@@ -23,3 +23,27 @@ function showLess() {
     // $('div').addClass('trip_hidden');
 
 }
+
+(function() {
+    ('.hamburger').click(function() {
+        (this).toggleClass('active');
+ 
+        if ((this).hasClass('active')) {
+            ('.navbox').addClass('active');
+        } else {
+            ('.navbox').removeClass('active');
+        }
+    });
+});
+
+// ********** nav toggle ************
+// select button and links
+
+const navBtn = document.getElementById("nav-toggle");
+const links = document.getElementById("nav-links");
+const navCont = document.getElementById("navbar");
+// add event listener
+navBtn.addEventListener("click", () => {
+  links.classList.toggle("show-links");
+  navCont.classList.toggle("active");
+});

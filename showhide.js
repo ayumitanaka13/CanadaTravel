@@ -38,9 +38,12 @@ function showLess() {
 
 // ********** nav toggle ************
 // select button and links
+
 const navBtn = document.getElementById("nav-toggle");
-const links = document.getElementById("nav-top");
+const links = document.getElementById("nav-links");
+const navCont = document.getElementById("navbar");
 // add event listener
 navBtn.addEventListener("click", () => {
   links.classList.toggle("show-links");
+  navCont.classList.toggle("active");
 });

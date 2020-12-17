@@ -38,7 +38,35 @@ header {
     width: 100vw;
 }
 /* @media (min-width:768px) { */
+/* ---------------
+toggle
+--------------- */
 
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+.nav-toggle {
+    background: transparent;
+    border: transparent;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    display: none;
+  }
+  .nav-toggle:hover {
+    transform: scale(1.2);
+  }
+  
+  /* .show-links {
+    height: 280px;
+  } */
+  /* -------------
+  finish toggle 
+  ------------- */
 .navbar {
   width: 90%;
   /* background-color: rgba(0, 0, 0, 0.7); */
@@ -63,7 +91,7 @@ header {
 .navbox {
     padding: 0.45rem 1rem ;
     margin-right: 7%;
-    display: inline;
+    display: inline-block;
 }
 
 
@@ -96,6 +124,24 @@ header {
     color: white;
 }
 
+@media (max-width: 425px) {
+
+   
+    .nav-toggle {
+        display: block;
+      }
+
+      .nav-box {
+          display :none;
+      }
+
+      .show-links {
+        height: 280px;
+      }
+    .navbar {
+        
+    }
+}
 /* #choose label {
     color:white;
     margin-right : 5px;

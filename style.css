@@ -504,6 +504,9 @@ gap: 50px;
 .trip_info {
     padding: 10px;
 }
+.trip_info > p {
+    padding-top: 10px;
+}
 
 .trip_footer {
     display: flex;

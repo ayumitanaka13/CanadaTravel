@@ -260,7 +260,7 @@ header {
 }
 #after-hero {
   width: 100vw;
-  height: 50vh;
+  height: 30vh;
   background-color:rgba(0, 0, 0, 1) ;
 }
 @media screen and (max-width: 768px) {
@@ -288,12 +288,16 @@ header {
     margin-top: 0;
     padding-top:1rem ;
   }
+  #after-hero {
+    height: 40vh;
+  }
 }
 
 /* MOI */
 /* banner section */
 .pictures-content{
     margin: 10% auto;
+    margin-top: -8rem;
 }
 .pictures-banner{
     display: grid;
@@ -316,6 +320,7 @@ header {
     height: 100%;
     object-fit: cover;
 }
+
 @media (max-width: 425px){
     .pictures-content{
         top: 0;
@@ -325,6 +330,7 @@ header {
         margin: 30px;
     }
 }
+
 @media (min-width: 768px){
     .pictures-banner{
         grid-template-columns: 1fr 1fr;
@@ -333,6 +339,7 @@ header {
         width: 200px;
     }
 }
+
 @media (min-width:1023px){
     .pictures-banner{
         grid-template-columns: repeat(3, 1fr);
@@ -341,6 +348,7 @@ header {
         width: 200px;
     }
 }
+
 .tour-price{
     position: absolute;
     right: 0;
@@ -372,6 +380,7 @@ header {
     text-align: center;
     margin: 5rem;
 }
+
 #outer{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -384,6 +393,9 @@ header {
 }
 .trip-feature{
     text-align: center; 
+}
+.trip-feature p {
+    padding: 0 1rem;
 }
 .faw-style{
     font-size: 40px;
@@ -465,20 +477,14 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 425px) {
-
+@media (max-width: 980px) { 
     /* inspiration */
 
     #inspiration {
         padding: 2rem 0;
         text-align: center;
     }
-    
-    #inspiration h2 {
-        margin-top: 2rem;
-        margin-bottom: 4rem;
-    }
-    
+
     #inspiration .content {
         display: block;
     }
@@ -486,7 +492,11 @@ header {
     #inspiration .content>div {
         width: 100%;
     }
-    
+
+    #inspiration h2 {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
 
     #inspiration h3 {
         margin: 2rem 0;
@@ -496,7 +506,7 @@ header {
         padding: 0 1rem;
         margin-bottom: 2rem;
     }
-    
+
     /* choose */
     
     #choose {
@@ -520,7 +530,16 @@ header {
         margin-right: 0;
         margin-bottom: 0.5rem;
     }
-        
+}
+
+
+@media (max-width: 425px) {
+
+    /* inspiration */
+
+    #inspiration p {
+        padding: 0 1.2rem;
+    }
 }
 
 

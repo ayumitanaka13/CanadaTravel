@@ -2,7 +2,7 @@
 
 Travel agency website in Canada
 
-# DEMO
+# Demo
 https://cantravel.netlify.app
 
 # Design

@@ -3,7 +3,7 @@
 Travel agency website in Canada
 
 # DEMO
-[https://cantravel.netlify.app/]
+https://cantravel.netlify.app
 
 # Design
 

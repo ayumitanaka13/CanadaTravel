@@ -293,6 +293,12 @@ header {
   }
 }
 
+@media (max-width: 425px){
+    #after-hero {
+        height: 50vh;
+    }
+}
+
 /* MOI */
 /* banner section */
 .pictures-content{
